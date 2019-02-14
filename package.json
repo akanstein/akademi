@@ -1,0 +1,23 @@
+{
+  "name": "akademi",
+  "version": "1.0.0",
+  "description": "A learning resource application",
+  "main": "server.js",
+  "author": "Akanstein",
+  "license": "MIT",
+  "script" : {
+    "start": "server.js",
+    "build":"yarn cd client && react-scripts build",
+    "server" : "nodemon server.js",
+    "heroku-postbuild":"yarn run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
