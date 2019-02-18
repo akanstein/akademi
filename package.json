@@ -6,11 +6,11 @@
   "author": "Akanstein",
   "license": "MIT",
   "scripts" : {
-    "start": "cd client && yarn run build",
+    "start": "node server.js",
     "server" : "nodemon server.js",
     "client": "cd client && yarn start ",
     "dev":"concurrently \"yarn run server\" \"yarn run client\" ",
-    "heroku-postbuild":"cd client && yarn install"
+    "heroku-postbuild":"cd client && yarn install "
 
   },
   "dependencies": {
